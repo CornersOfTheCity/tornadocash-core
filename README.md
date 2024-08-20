@@ -12,7 +12,7 @@ node scripts/helper/compileHasher.js
 ```
 完成后将json文件转移到deploy目录下。
 
-部署到sepolia：
+### 部署：
 ```
 npx hardhat run scripts/deploy.js --network sepolia
 ```
@@ -49,6 +49,12 @@ snarkjs zkey verify withdraw.r1cs ceremony_final.ptau setup_final.zkey
 
 最后生成solidity verify文件：
 snarkjs zkey export solidityverifier setup_final.zkey Verifier.sol
+```
+
+## 测试
+测试之前需要先讲电路编译好，然后运行：
+```
+npx hardhat test
 ```
 
 # Address - Sepolia
