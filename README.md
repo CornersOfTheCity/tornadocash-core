@@ -5,6 +5,7 @@
 Tornada Cash的存款就是通过两个输入（nullifier + secret）组成的哈希存入到merkle tree中。为什么需要两个输入，这是因为我们在取款时需要根据sercet来生成一个Proof，而这个sercet是一个私有输入，不会暴露在交易过程中，这样就可以保证取款和存款的连接有效断开。
 
 # 部署
+部署前需要先编译电路生成`Verifier.sol`并转移到`contracts`里面。
 ### Hasher
 hasher是通过abi和bytecode部署的，生成的命令为：
 ```
@@ -50,6 +51,7 @@ snarkjs zkey verify withdraw.r1cs ceremony_final.ptau setup_final.zkey
 最后生成solidity verify文件：
 snarkjs zkey export solidityverifier setup_final.zkey Verifier.sol
 ```
+完成后将生成的`Verifier.sol`中转移到`contracts`里面。
 
 ## 测试
 测试之前需要先讲电路编译好，然后运行：

@@ -149,8 +149,8 @@
       ]
     },
     "/Users/zyq/Contracts/TornadoCash/tornadocash-core/contracts/Verifier.sol": {
-      "lastModificationDate": 1724119282951,
-      "contentHash": "98316e38bcd106d9714006761b1d19e8",
+      "lastModificationDate": 1724123074477,
+      "contentHash": "e8d4a2fc2ecf640c87ca49603eaa454e",
       "sourceName": "contracts/Verifier.sol",
       "solcConfig": {
         "version": "0.7.0",

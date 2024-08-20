@@ -1,3 +1,10 @@
 node_modules
 .env
 
+/artifacts
+/circuits/withdraw_js
+/circuits/*.ptau
+/circuits/*.r1cs
+/circuits/*.zkey
+/circuits/*.ptau
+/circuits/*.sol
