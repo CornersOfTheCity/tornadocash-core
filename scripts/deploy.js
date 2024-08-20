@@ -21,7 +21,7 @@ async function main() {
     console.log("Hasher address:", hasher.target);
 
     console.log(`====== ETHTornado Deploying ======`);
-    var ethtornado = await ethers.deployContract("ETHTornado", [verifier.target, hasher.target, '1000000000000000000', 31]);
+    var ethtornado = await ethers.deployContract("ETHTornado", [verifier.target, hasher.target, '1000000000000000000', 20]);
     await ethtornado.waitForDeployment();
     console.log("ETHTornado address:", ethtornado.target);
 }
